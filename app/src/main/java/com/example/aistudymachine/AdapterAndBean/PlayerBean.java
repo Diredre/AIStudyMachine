@@ -4,6 +4,7 @@ public class PlayerBean {
     private String videoUrl, imageUrl, auther, con;
     private int likenum = 0;
     private int comment_num = 0;
+    private int type = 0;   // 运动类=1， 文化类=2， 历史类=3
 
     public PlayerBean(String videoUrl, String imageUrl, String auther, String con) {
         this.videoUrl = videoUrl;
