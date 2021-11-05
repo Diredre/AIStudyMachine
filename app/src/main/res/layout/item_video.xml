@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:orientation="vertical"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_video_cv"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:cardElevation="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_video_iv_cover"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="5dp"
+                android:layout_toRightOf="@id/item_video_iv_cover"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/item_video_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:text="纪念竺可桢校长"/>
+                <TextView
+                    android:id="@+id/item_video_tv_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:layout_below="@id/item_video_tv_title"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="笔耕不辍，早出晚归，一杯茶一包烟我能坐一天，你也在学习吗？"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true">
+                    <TextView
+                        android:id="@+id/item_video_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"
+                        android:text="彤彤在看书"/>
+                    <ImageView
+                        android:id="@+id/item_video_iv_like"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/love"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
